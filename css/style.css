@@ -666,3 +666,25 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* -------------------------------------- */
+/* 12. Entrance Animations (Eye-Catching) */
+/* -------------------------------------- */
+
+/* 1. Define the animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly below its final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends at its original position */
+    }
+}
+
+/* 2. Apply the animation to major sections/cards */
+.animate-fade-in {
+    opacity: 0; /* Ensures elements are invisible before the animation starts */
+    animation: fadeIn 1.2s ease-out forwards;
+}
